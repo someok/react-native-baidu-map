@@ -80,9 +80,9 @@ public class GeolocationModule extends BaseModule
 
     @ReactMethod
     public void getCurrentPosition() {
-        if(locationClient == null) {
+        // if(locationClient == null) {
             initLocationClient();
-        }
+        // }
         Log.i("getCurrentPosition", "getCurrentPosition");
         locationClient.start();
     }
